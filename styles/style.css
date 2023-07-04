@@ -1,6 +1,6 @@
 /* Header style start*/
 .header {
-  padding: 92px 50px;
+  padding: 92px 50px 98px;
 }
 .header__box {
   display: flex;
@@ -8,10 +8,15 @@
   justify-content: space-between;
   padding-top: 5px;
 }
+/*Выравнивание логотипа по центру независимо от header*/
 .header__logo {
   width: 140px;
   position: absolute;
   left: 45%;
+}
+/*Задал максимальный размер чтобы при увеличении наполнения навигация не накладывалась на логотип */
+.header__menu {
+  max-width: 600px;
 }
 .header__links-list {
   display: flex;
@@ -44,4 +49,33 @@
 .header__address {
   text-decoration: none;
   border-bottom: 1px solid black;
+}
+/* Header style end */
+
+/* Main style start */
+.cover {
+  background-image: url(/images/cover.jpg);
+  background-repeat: no-repeat;
+  padding: 165px 50px 65px;
+}
+.cover__title {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  padding-bottom: 147px;
+}
+.aligned-text {
+  display: block;
+}
+.aligned-text_center {
+  text-align: center;
+}
+.aligned-text_right {
+  text-align: right;
+}
+.letter-spacing-extended {
+  letter-spacing: 60px;
 }
