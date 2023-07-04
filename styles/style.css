@@ -1,1 +1,24 @@
-/* место для вашего кода */
+/* Header style start*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    display: block;
+    width: 148px;
+    height: 105px;
+    margin: 0 auto;
+}
+.header__links-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: circle;
+    gap: 32px;
+}
+.header__links-list-item_no-bullit{
+    list-style: none;
+}
+.header__link_active{
+    text-decoration: none;
+}
