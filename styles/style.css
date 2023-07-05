@@ -1,6 +1,8 @@
 /* Header style start*/
 .header {
   padding: 92px 50px 98px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .header__box {
   display: flex;
@@ -12,7 +14,11 @@
 .header__logo {
   width: 140px;
   position: absolute;
-  left: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 /*Задал максимальный размер чтобы при увеличении наполнения навигация не накладывалась на логотип */
 .header__menu {
@@ -53,29 +59,84 @@
 /* Header style end */
 
 /* Main style start */
+
+/* Style section cover */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 1;
+}
 .cover {
+  position: relative;
   background-image: url(/images/cover.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  padding: 165px 50px 65px;
+  background-position: center;
+  padding: 173px 50px 50px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .cover__title {
+  position: relative;
   color: #fff;
   font-size: 100px;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 30px;
   text-transform: uppercase;
-  padding-bottom: 147px;
+  padding-bottom: 134px;
+  z-index: 1;
 }
 .aligned-text {
   display: block;
 }
 .aligned-text_center {
+  padding-top: 28px;
   text-align: center;
 }
 .aligned-text_right {
+  padding-left: 50px;
+  padding-top: 20px;
   text-align: right;
 }
 .letter-spacing-extended {
   letter-spacing: 60px;
 }
+.no-letter-spacing {
+  letter-spacing: 0px;
+}
+.cover__description {
+  display: flex;
+  gap: 78px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.cover__description-text {
+  word-spacing: 18px;
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: right;
+  z-index: 1;
+}
+.bet-button {
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  z-index: 1;
+}
+/* End Style section cover */
