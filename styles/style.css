@@ -197,7 +197,7 @@
   grid-template-columns: 430px 1fr;
   grid-template-rows: 240px 1fr;
   grid-template-areas: "logo title" ". text";
-  column-gap: 20px;
+  column-gap: 25px;
 }
 .about__logo {
   display: flex;
@@ -221,14 +221,12 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: auto 0;
-  padding-left: 25px;
   padding-top: 10px;
 }
 .about__text {
   grid-area: text;
   color: #000;
   font-size: 20px;
-  padding-left: 25px;
   padding-top: 7px;
 }
 .about__text :first-of-type {
